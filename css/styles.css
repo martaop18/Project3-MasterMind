@@ -1,0 +1,16 @@
+*{
+    box-sizing:border-box ;
+}
+
+body{
+    overflow-x: hidden;
+    display: flex;
+    background-color: #98D8AA;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameBoard{
+    background-color: aliceblue;
+    
+}
