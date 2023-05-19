@@ -9,18 +9,27 @@
 </head>
 <body>
 
-<h1>&lt masterMind /&gt</h1>
+
 
 <!-- INSTRUCTIONS -->
+<div class="mainContainer">
+
 <div class="instructions" id="help">
     <div class="howToPlay"></div>
 </div>
 
+<!-- GAME BOARD  -->
+<div class="gameBoard" ><h3>&lt masterMind /&gt</h3>
+    
+    <div class="colorBoard"></div>
+    <div class="hitsBoard"></div>
+</div>
+
 <!-- CONTROLLERS BOARD -->
 <div class="controlBoard">
-    <div class="newGame">New Game</div>
-    <div class="play">Play</div>
-    <div class="clear">Clear</div>
+    <div class="newGame"></div>
+    <div class="play"></div>
+    <div class="clear"></div>
 
 </div>
 
@@ -31,11 +40,7 @@
         <div class="level" id="expert"></div>
     </div>
 
-<!-- GAME BOARD  -->
-    <div class="gameBoard">
-        <div class="colorBoard"></div>
-        <div class="hitsBoard"></div>
-    </div>
+
     <!-- COLOR OPTIONS -->
 <div class="colorOptions">
     <div class="colorOptions" id="blue"></div>
@@ -45,12 +50,13 @@
     <div class="colorOptions" id="pink"></div>
     <div class="colorOptions" id="brown"></di
 
-<!-- SECRET CODE -->
+<!-- CODE -->
 <div class="code">
     <div class="codeColor" id="codeColor1"></div>
     <div class="codeColor" id="codeColor2"></div>
     <div class="codeColor" id="codeColor3"></div>
     <div class="codeColor" id="codeColor4"></div>
+</div>
 </div>
 
 <script src="./js/main.js"></script>

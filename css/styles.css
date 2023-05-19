@@ -1,16 +1,64 @@
 *{
-    box-sizing:border-box ;
+    box-sizing:border-box;
+  
 }
 
 body{
     overflow-x: hidden;
     display: flex;
-    background-color: #98D8AA;
+    background-color: #f8f9fa;
     align-items: center;
     justify-content: center;
+    
 }
 
-.gameBoard{
-    background-color: aliceblue;
-    
+
+/* MAIN CONTAINER */ 
+
+.mainContainer{
+    width: 580 px;
+    height: 100vh;
+    display: flex;
+
+}
+
+
+/* <!-- GAME BOARD  --> */ 
+
+.gameBoard {
+    height: 80%;
+    width: 300px;
+    display: flex;
+    margin-top: 5em;
+    margin: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+        
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ec377f;
+    }
+
+.colorBoard{
+    height: 90%;
+    width: 55%;
+    border: #c8a1c7;
+    border-style: solid;
+    display: flex;
+    float: left;
+}
+
+.hitsBoard {
+
+    height: 90%;
+    width: 30%;
+    border:  #c8a1c7;
+    border-style: solid;
+    display: flex;
+    float: right;
+  
+
 }
