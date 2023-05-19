@@ -4,21 +4,22 @@
 }
 
 body{
+    background-color: rgb(237, 180, 223);
     overflow-x: hidden;
-    display: flex;
-    background-color: #f8f9fa;
-    align-items: center;
-    justify-content: center;
-    
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
 /* MAIN CONTAINER */ 
 
 .mainContainer{
-    width: 580 px;
     height: 100vh;
-    display: flex;
+    display: grid;
+    place-items: center;
+    color: #8d5c74;
 
 }
 
@@ -26,39 +27,40 @@ body{
 /* <!-- GAME BOARD  --> */ 
 
 .gameBoard {
-    height: 80%;
-    width: 300px;
-    display: flex;
-    margin-top: 5em;
-    margin: 1em;
-    margin-bottom: 1em;
-    padding: 1em;
-        
-    display: inline-block;
-    flex-direction: column;
+    height: 100%;
+    display: grid;
+    border: #ec377f;
+    border-style: solid;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #ec377f;
-    }
+    align-items: center; 
+}
 
 .colorBoard{
-    height: 90%;
-    width: 55%;
-    border: #c8a1c7;
-    border-style: solid;
-    display: flex;
+    height: 25em;
+    width: 20em;
     float: left;
 }
 
 .hitsBoard {
 
-    height: 90%;
-    width: 30%;
-    border:  #c8a1c7;
-    border-style: solid;
-    display: flex;
+    height: 25em;
+    width: 20em;
     float: right;
-  
+  }
 
-}
+  .code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 12em;
+    border: #ec377f;
+  }
+
+  .grid {
+    display:grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat( 5, 1fr);
+    height: 100%;
+    width: 100%;
+  }
