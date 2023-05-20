@@ -98,7 +98,7 @@ body{
 
 .instructions {
     display: flex;
-    background-color: #EFA3C8; 
+    background-color:  #FFD3A3; 
     color: aliceblue;
     justify-content: center;
     width: 50%;
@@ -107,6 +107,7 @@ body{
 }
 .colorOptions{
     display: flex;
+    justify-content: center;
 }
 
 .colorOptions > span{
@@ -115,6 +116,8 @@ body{
     height: 2.5em;
     width: 2.5em;
     margin: 0.2em;
+   
+   
  }
 
 .colorOptions, .buttons > span:hover{
@@ -145,11 +148,17 @@ body{
 
 .buttons > span{
     border-style: solid;
-    border-radius: 10%;
+    border-radius: 8%;
     height: 2em;
     width: 3.5em;
     margin: 1em;
     text-align: center;
     background-color: #B799FF;
+  }
+  .howToPlay {
+    display:grid;
+    font-size: small;
+    color:#1D267D;
+  }
+
   
-}
