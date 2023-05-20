@@ -107,10 +107,6 @@ body{
 }
 .colorOptions{
     display: flex;
-    justify-content: space-around;
-
-    /* justify-content: space-around;
-    align-items: center; */
 }
 
 .colorOptions > span{
@@ -121,7 +117,7 @@ body{
     margin: 0.2em;
  }
 
-.colorOptions > span:hover{
+.colorOptions, .buttons > span:hover{
     cursor: pointer;
 }
 
@@ -142,3 +138,18 @@ body{
     background-color: #F9F54B;
 }
 
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons > span{
+    border-style: solid;
+    border-radius: 10%;
+    height: 2em;
+    width: 3.5em;
+    margin: 1em;
+    text-align: center;
+    background-color: #B799FF;
+  
+}
