@@ -10,7 +10,7 @@ body{
     font-family:sans-serif;
 }
 
-/* MAIN CONTAINER */ 
+/* MAIN CONTAINER: GAME BOARD & INSTRUCTIONS */ 
 
 .gameMainContainer{
     background-color: #FFD3A3;
@@ -36,21 +36,21 @@ body{
     display: flex;
     flex-direction: column;
     place-items:center ;
-    width: 30%;
+    width: 40%;
      justify-content: center;
      align-items: center;
 
  }
 
-    .code {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3em;
-        width: 12em;
-        border: #ACBCFF;
-        border-style: solid;
-      }
+code {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 3em;
+   width: 12em;
+   border: #ACBCFF;
+   border-style: solid;
+ }
     
 .colorBoard{
     height: 100%;
@@ -66,8 +66,6 @@ body{
 .colorBoard > * {
     display: grid;
     place-items: center;
-
-   
 }
 
 .col {
@@ -83,26 +81,25 @@ body{
     grid-template-rows: 1fr, 1fr;
 }
 
-
 .row1 > div , .row2 > div, .row3 > div, .row4 > div, .row5 > div, .row6 > div, .row7 > div, .row8 > div, .row9 > div, .row10 > div {
     border-radius: 20px;
     border-style: solid ;
-    height: 0.7em;
-    width: 0.7em;
+    height: 0.8em;
+    width: 0.8em;
    } 
    
 
-  .instructions {
+.instructions {
     display: flex;
     background-color: #BE5A83; 
     color: aliceblue;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 .colorOptions{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 
     /* justify-content: space-around;
     align-items: center; */
@@ -114,7 +111,7 @@ body{
     height: 2.5em;
     width: 2.5em;
     margin: 0.2em;
-}
+ }
 
 .colorOptions > span:hover{
     cursor: pointer;
@@ -133,12 +130,6 @@ body{
 .pink{
     background-color: #FF55BB;
 }
-.brown{
-    background-color: #B8621B ;
-}
 .yellow{
     background-color: #F9F54B;
 }
-.red{
-    background-color: #F55050;
-} 
