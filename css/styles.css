@@ -42,15 +42,22 @@ body{
 
  }
 
-code {
+.secretCode {
    display: flex;
    justify-content: center;
    align-items: center;
    height: 3em;
    width: 12em;
-   border: #ACBCFF;
-   border-style: solid;
- }
+}
+.secretCode > span {
+    border-radius: 40px;
+    border-style: solid ;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.2em;
+    border-color: #FF55BB;
+
+}
     
 .colorBoard{
     height: 100%;
@@ -71,9 +78,9 @@ code {
 .col {
     border-radius: 40px;
     border-style: solid ;
-    height: 2em;
-    width: 2em;
-    color: #BE5A83;
+    height: 2.5em;
+    width: 2.5em;
+    color: #FF55BB;
 }
 .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10{
     display: grid;
@@ -91,11 +98,12 @@ code {
 
 .instructions {
     display: flex;
-    background-color: #BE5A83; 
+    background-color: #EFA3C8; 
     color: aliceblue;
     justify-content: center;
     width: 50%;
     height: 100%;
+    padding-top: 1em;
 }
 .colorOptions{
     display: flex;
@@ -133,3 +141,4 @@ code {
 .yellow{
     background-color: #F9F54B;
 }
+
