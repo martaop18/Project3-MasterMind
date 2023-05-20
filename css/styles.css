@@ -1,6 +1,6 @@
-/* *{
+*{
     box-sizing:border-box;
-  } */
+  }
 
 body{
     background-color: #FF55BB;
@@ -9,7 +9,6 @@ body{
     margin-top: 1em;
     font-family:sans-serif;
 }
-
 
 /* MAIN CONTAINER */ 
 
@@ -59,9 +58,7 @@ body{
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    /* border: #ACBCFF; */
-    /* border-style: solid; */
+    gap: 7px;
     place-items: center;
     background-color: FCFFB2;
 }
@@ -76,8 +73,8 @@ body{
 .col {
     border-radius: 40px;
     border-style: solid ;
-    height: 1.5em;
-    width: 1.5em;
+    height: 2em;
+    width: 2em;
     color: #BE5A83;
 }
 .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10{
@@ -90,15 +87,58 @@ body{
 .row1 > div , .row2 > div, .row3 > div, .row4 > div, .row5 > div, .row6 > div, .row7 > div, .row8 > div, .row9 > div, .row10 > div {
     border-radius: 20px;
     border-style: solid ;
-    height: 0.5em;
-    width: 0.5em;
+    height: 0.7em;
+    width: 0.7em;
    } 
    
+
   .instructions {
     display: flex;
     background-color: #BE5A83; 
     color: aliceblue;
     justify-content: center;
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
+.colorOptions{
+    display: flex;
+    /* justify-content: space-around; */
+
+    /* justify-content: space-around;
+    align-items: center; */
+}
+
+.colorOptions > span{
+    border-radius: 40px;
+    border-style: solid ;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.2em;
+}
+
+.colorOptions > span:hover{
+    cursor: pointer;
+}
+
+.blue {
+    background-color: #19A7CE;}
+.orange{
+    background-color: #F97B22;
+}
+.green{
+    background-color:#00FFCA ;}
+.purple{
+    background-color: #AD7BE9;
+}
+.pink{
+    background-color: #FF55BB;
+}
+.brown{
+    background-color: #B8621B ;
+}
+.yellow{
+    background-color: #F9F54B;
+}
+.red{
+    background-color: #F55050;
+} 
