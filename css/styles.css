@@ -1,66 +1,91 @@
 *{
     box-sizing:border-box;
-  
-}
+  }
 
 body{
-    background-color: rgb(237, 180, 223);
+    background-color: rgb(241, 174, 49);
     overflow-x: hidden;
     padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
+    margin-top: 1em;
+    font-family:sans-serif;
 }
 
 
 /* MAIN CONTAINER */ 
 
-.mainContainer{
-    height: 100vh;
+.gameMainContainer{
+    background-color: chartreuse;
+    height: 50%;
     display: grid;
     place-items: center;
     color: #8d5c74;
-
+    margin: 1em;
+    padding-left: 2em;
 }
 
-
 /* <!-- GAME BOARD  --> */ 
-
-.gameBoard {
+.gameBox{
+    display: flex;
     height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.gameBoard {
     display: grid;
+    background-color: aqua;
+    place-items:center ;
+    width: 60%;
+     justify-content: center;
+     align-items: center;
+ }
+
+    .code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3em;
+        width: 12em;
+        border: #ec377f;
+        border-style: solid;
+      }
+    
+.colorBoard{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     border: #ec377f;
     border-style: solid;
     justify-content: center;
     align-items: center; 
+    background-color: aliceblue;
 }
+    
+.row1 > div, .row2 > div, .row3 > div, .row4 > div, .row5 > div, .row6 > div, .row7 > div, .row8 > div, .row9 > div, .row10 > div {
+    display: grid;
+    border-radius: 100%;
+    border-style: solid ;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+    /* grid-column: repeat(4, 1fr); */
+} 
 
-.colorBoard{
-    height: 25em;
-    width: 20em;
-    float: left;
-}
-
-.hitsBoard {
+/* .hitsBoard {
 
     height: 25em;
     width: 20em;
     float: right;
-  }
-
-  .code {
+  } */
+  .instructions {
     display: flex;
+    background-color: rgb(104, 104, 188); 
+    color: aliceblue;
     justify-content: center;
-    align-items: center;
-    height: 3em;
-    width: 12em;
-    border: #ec377f;
-  }
-
-  .grid {
-    display:grid;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat( 5, 1fr);
+    width: 20%;
     height: 100%;
-    width: 100%;
-  }
+}

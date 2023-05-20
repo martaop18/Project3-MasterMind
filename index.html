@@ -1,132 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>masterMind</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- INSTRUCTIONS -->
+    <div class="gameMainContainer">
+      <h1 class="header">&lt masterMind /&gt</h1>
 
+      <!-- GAME BOARD  -->
+<div class="gameBox">
+      <div class="gameBoard">
+        <!-- CODE -->
+        <div class="code">CODE
+          <div class="codeColor" id="codeColor1"></div>
+          <div class="codeColor" id="codeColor2"></div>
+          <div class="codeColor" id="codeColor3"></div>
+          <div class="codeColor" id="codeColor4"></div>
+        </div>
 
-
-<!-- INSTRUCTIONS -->
-<div class="mainContainer"><h1>&lt masterMind /&gt</h1>
-
-<div class="instructions" id="help">
-    <div class="howToPlay"></div>
-</div>
-
-<!-- GAME BOARD  -->
-<div class="gameBoard" >
-    
-    
-    <div class="colorBoard">
-        <div class="grid">
-        <div class="row1">
+        <div class="colorBoard">
+          <div class="row1">
             <div class="row1-1"></div>
             <div class="row1-2"></div>
             <div class="row1-3"></div>
             <div class="row1-4"></div>
-        </div>
-        <div class="row2">
+          </div>
+          <div class="row2">
             <div class="row2-1"></div>
             <div class="row2-2"></div>
             <div class="row2-3"></div>
             <div class="row2-4"></div>
-        </div>
-        <div class="row3">
+          </div>
+          <div class="row3">
             <div class="row3-1"></div>
             <div class="row3-2"></div>
             <div class="row3-3"></div>
             <div class="row3-4"></div>
-        </div>
-        <div class="row4">
+          </div>
+          <div class="row4">
             <div class="row4-1"></div>
             <div class="row4-2"></div>
             <div class="row4-3"></div>
             <div class="row4-4"></div>
-        </div>
-        <div class="row5">
+          </div>
+          <div class="row5">
             <div class="row5-1"></div>
             <div class="row5-2"></div>
             <div class="row5-3"></div>
             <div class="row5-4"></div>
-        </div>
-        <div class="row6">
+          </div>
+          <div class="row6">
             <div class="row6-1"></div>
             <div class="row6-2"></div>
             <div class="row6-3"></div>
             <div class="row6-4"></div>
-        </div>
-        <div class="row7">
+          </div>
+          <div class="row7">
             <div class="row7-1"></div>
             <div class="row7-2"></div>
             <div class="row7-3"></div>
             <div class="row7-4"></div>
-        </div>
-        <div class="row8">
+          </div>
+          <div class="row8">
             <div class="row8-1"></div>
             <div class="row8-2"></div>
             <div class="row8-3"></div>
             <div class="row8-4"></div>
-        </div>
-        <div class="row9">
+          </div>
+          <div class="row9">
             <div class="row9-1"></div>
             <div class="row9-2"></div>
             <div class="row9-3"></div>
             <div class="row9-4"></div>
-        </div>
-        <div class="row10">
+          </div>
+          <div class="row10">
             <div class="row10-1"></div>
             <div class="row10-2"></div>
             <div class="row10-3"></div>
             <div class="row10-4"></div>
+          </div>
         </div>
+      </div>
+      <!-- <div class="hitsBoard">
+       
+            <div><span class="hit1-1"></span></div>
+            <div><span class="hit1-2"></span></div>
+            <div><span class="hit1-3"></span></div>
+            <div><span class="hit1-4"></span></div>
+
+        </div>
+    </div> -->
+
+
+     <!-- INFO BOARD -->
+
+     <div class="instructions" id="help">
+        <div class="howToPlay"></div>
+        <!-- CONTROLLERS BOARD -->
+        <div class="controlBoard">
+          <div class="newGame"></div>
+          <div class="play"></div>
+          <div class="clear"></div>
+        </div>
+
+        <!-- COLOR OPTIONS, PICK AND DELETE -->
+        <div class="options">
+          <span class="pickColor">pick</span>
+          <span class="deleteColor">delete</span>
+          <span class="blue" id="blueColor"></span>
+          <span class="orange" id="orangeColor"></span>
+          <span class="green" id="greenColor"></span>
+          <span class="purple" id="purpleColor"></span>
+          <span class="pink" id="pinkColor"></span>
+          <span class="brown" id="brownColor"></span>
+          <span class="yellow" id="yellowColor"></span>
+          <span class="lime" id="limeColor"></span>
+        </div>
+
+        <!--LEVEL BOARD   -->
+        <div class="levelBoard">
+          <div class="level" id="beginner"></div>
+          <div class="level" id="advanced"></div>
+          <div class="level" id="expert"></div>
+        </div>
+      </div>
     </div>
-    </div>
-    <div class="hitsBoard"></div>
-    <!-- CODE -->
-<div class="code">
-    <div class="codeColor" id="codeColor1"></div>
-    <div class="codeColor" id="codeColor2"></div>
-    <div class="codeColor" id="codeColor3"></div>
-    <div class="codeColor" id="codeColor4"></div>
-</div>
 </div>
 
-<!-- CONTROLLERS BOARD -->
-<div class="controlBoard">
-    <div class="newGame"></div>
-    <div class="play"></div>
-    <div class="clear"></div>
-
-</div>
-
-<!--LEVEL BOARD   -->
-    <div class="levelBoard">
-        <div class="level" id="beginner"></div>
-        <div class="level" id="advanced"></div>
-        <div class="level" id="expert"></div>
-    </div>
-
-
-    <!-- COLOR OPTIONS -->
-<div class="colorOptions">
-    <div class="colorOptions" id="blue"></div>
-    <div class="colorOptions" id="orange"></div>
-    <div class="colorOptions" id="green"></div>
-    <div class="colorOptions" id="purple"></di>
-    <div class="colorOptions" id="pink"></div>
-    <div class="colorOptions" id="brown"></di
-
-
-</div>
-</div>
-</div>
-
-<script src="./js/main.js"></script>
-
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
