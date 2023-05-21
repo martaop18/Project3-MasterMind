@@ -3,7 +3,7 @@
   }
 
 body{
-    background-color: #FF55BB;
+    background-color: #B2A4FF;
     overflow-x: hidden;
     padding: 0;
     margin-top: 1em;
@@ -13,7 +13,7 @@ body{
 /* MAIN CONTAINER: GAME BOARD & INSTRUCTIONS */ 
 
 .gameMainContainer{
-    background-color: #FFD3A3;
+    background-color: whitesmoke;
     height: 50%;
     display: grid;
     place-items: center;
@@ -69,7 +69,6 @@ body{
     grid-template-columns: repeat(5, 1fr);
     gap: 7px;
     place-items: center;
-    background-color: FCFFB2;
 }
     
 .colorBoard > * {
@@ -110,7 +109,8 @@ body{
 
 .colorOptions > span{
     border-radius: 40px;
-    border-style: solid ;
+    border-style: solid;
+    border-color: #BDCDD6;
     height: 2.5em;
     width: 2.5em;
     margin: 0.2em;
@@ -124,6 +124,7 @@ body{
 
 .blue {
     background-color: #19A7CE;}
+    
 .orange{
     background-color: #F97B22;
 }
@@ -147,6 +148,7 @@ body{
 .buttons > span{
     border-style: solid;
     border-radius: 8%;
+    border-color: #B2A4FF;
     height: 1.5em;
     width: 3.5em;
     margin: 1em;
@@ -161,7 +163,7 @@ body{
 
   .level > span{
     border-style: solid;
-    border-color: aliceblue;
+    border-color:#408E91;
     color: aliceblue;
     border-radius: 8%;
     height: 1.5em;

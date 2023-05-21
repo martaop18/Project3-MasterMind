@@ -6,189 +6,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>&lt masterMind /&gt</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" href="./img/brain.png">
+    <link rel="shortcut icon" href="./img/brain.png" />
   </head>
   <body>
-  
     <div class="gameMainContainer">
-
       <h1 class="header">&lt masterMind /&gt</h1>
-        <!-- CODE -->
-        <div class="secretCode">
-            <span class="codeColor1"></span>
-            <span class="codeColor2"></span>
-            <span class="codeColor3"></span>
-            <span class="codeColor4"></span>
-          </div>
+      <!-- CODE -->
+      <div class="secretCode">
+        <span class="codeColor1"></span>
+        <span class="codeColor2"></span>
+        <span class="codeColor3"></span>
+        <span class="codeColor4"></span>
+      </div>
 
       <!-- GAME BOARD  -->
-<div class="gameBox">
+      <div class="gameBox">
+        <div class="gameBoard">
+          <div class="colorBoard">
+            <div><span class="col col1-1"></span></div>
+            <div><span class="col col1-2"></span></div>
+            <div><span class="col col1-3"></span></div>
+            <div><span class="col col1-4"></span></div>
+            <div class="row1">
+              <div class="row1-1"></div>
+              <div class="row1-2"></div>
+              <div class="row1-3"></div>
+              <div class="row1-4"></div>
+            </div>
 
-      <div class="gameBoard">
-      
+            <div><span class="col col2-1"></span></div>
+            <div><span class="col col2-2"></span></div>
+            <div><span class="col col2-3"></span></div>
+            <div><span class="col col2-4"></span></div>
+            <div class="row2">
+              <div class="row2-1"></div>
+              <div class="row2-2"></div>
+              <div class="row2-3"></div>
+              <div class="row2-4"></div>
+            </div>
 
-        <div class="colorBoard">
-          
-        <div><span class="col col1-1"></span></div>
-        <div><span class="col col1-2"></span></div>
-        <div><span class="col col1-3"></span></div>
-        <div><span class="col col1-4"></span></div>
-          <div class="row1">
-            <div class="row1-1"></div>
-            <div class="row1-2"></div>
-            <div class="row1-3"></div>
-            <div class="row1-4"></div>
-          </div>
-    
-        <div><span class="col col2-1"></span></div>
-        <div><span class="col col2-2"></span></div>
-        <div><span class="col col2-3"></span></div>
-        <div><span class="col col2-4"></span></div>
-          <div class="row2">
-            <div class="row2-1"></div>
-            <div class="row2-2"></div>
-            <div class="row2-3"></div>
-            <div class="row2-4"></div>
-          </div>
+            <div><span class="col col3-1"></span></div>
+            <div><span class="col col3-2"></span></div>
+            <div><span class="col col3-3"></span></div>
+            <div><span class="col col3-4"></span></div>
+            <div class="row3">
+              <div class="row3-1"></div>
+              <div class="row3-2"></div>
+              <div class="row3-3"></div>
+              <div class="row3-4"></div>
+            </div>
 
-        <div><span class="col col3-1"></span></div>
-        <div><span class="col col3-2"></span></div>
-        <div><span class="col col3-3"></span></div>
-        <div><span class="col col3-4"></span></div>
-          <div class="row3">
-            <div class="row3-1"></div>
-            <div class="row3-2"></div>
-            <div class="row3-3"></div>
-            <div class="row3-4"></div>
-          </div>
+            <div><span class="col col4-1"></span></div>
+            <div><span class="col col4-2"></span></div>
+            <div><span class="col col4-3"></span></div>
+            <div><span class="col col4-4"></span></div>
+            <div class="row4">
+              <div class="row4-1"></div>
+              <div class="row4-2"></div>
+              <div class="row4-3"></div>
+              <div class="row4-4"></div>
+            </div>
 
-        <div><span class="col col4-1"></span></div>
-        <div><span class="col col4-2"></span></div>
-        <div><span class="col col4-3"></span></div>
-        <div><span class="col col4-4"></span></div>
-          <div class="row4">
-            <div class="row4-1"></div>
-            <div class="row4-2"></div>
-            <div class="row4-3"></div>
-            <div class="row4-4"></div>
-          </div>
+            <div><span class="col col5-1"></span></div>
+            <div><span class="col col5-2"></span></div>
+            <div><span class="col col5-3"></span></div>
+            <div><span class="col col5-4"></span></div>
+            <div class="row5">
+              <div class="row5-1"></div>
+              <div class="row5-2"></div>
+              <div class="row5-3"></div>
+              <div class="row5-4"></div>
+            </div>
 
-        <div><span class="col col5-1"></span></div>
-        <div><span class="col col5-2"></span></div>
-        <div><span class="col col5-3"></span></div>
-        <div><span class="col col5-4"></span></div>
-          <div class="row5">
-            <div class="row5-1"></div>
-            <div class="row5-2"></div>
-            <div class="row5-3"></div>
-            <div class="row5-4"></div>
-          </div>
+            <div><span class="col col6-1"></span></div>
+            <div><span class="col col6-2"></span></div>
+            <div><span class="col col6-3"></span></div>
+            <div><span class="col col6-4"></span></div>
+            <div class="row6">
+              <div class="row6-1"></div>
+              <div class="row6-2"></div>
+              <div class="row6-3"></div>
+              <div class="row6-4"></div>
+            </div>
 
-        <div><span class="col col6-1"></span></div>
-        <div><span class="col col6-2"></span></div>
-        <div><span class="col col6-3"></span></div>
-        <div><span class="col col6-4"></span></div>
-          <div class="row6">
-            <div class="row6-1"></div>
-            <div class="row6-2"></div>
-            <div class="row6-3"></div>
-            <div class="row6-4"></div>
-          </div>
+            <div><span class="col col7-1"></span></div>
+            <div><span class="col col7-2"></span></div>
+            <div><span class="col col7-3"></span></div>
+            <div><span class="col col7-4"></span></div>
+            <div class="row7">
+              <div class="row7-1"></div>
+              <div class="row7-2"></div>
+              <div class="row7-3"></div>
+              <div class="row7-4"></div>
+            </div>
 
-          <div><span class="col col7-1"></span></div>
-          <div><span class="col col7-2"></span></div>
-          <div><span class="col col7-3"></span></div>
-          <div><span class="col col7-4"></span></div>
-          <div class="row7">
-            <div class="row7-1"></div>
-            <div class="row7-2"></div>
-            <div class="row7-3"></div>
-            <div class="row7-4"></div>
-          </div>
+            <div><span class="col col8-1"></span></div>
+            <div><span class="col col8-2"></span></div>
+            <div><span class="col col8-3"></span></div>
+            <div><span class="col col8-4"></span></div>
+            <div class="row8">
+              <div class="row8-1"></div>
+              <div class="row8-2"></div>
+              <div class="row8-3"></div>
+              <div class="row8-4"></div>
+            </div>
 
-        <div><span class="col col8-1"></span></div>
-        <div><span class="col col8-2"></span></div>
-        <div><span class="col col8-3"></span></div>
-        <div><span class="col col8-4"></span></div>
-          <div class="row8">
-            <div class="row8-1"></div>
-            <div class="row8-2"></div>
-            <div class="row8-3"></div>
-            <div class="row8-4"></div>
-          </div>
+            <div><span class="col col9-1"></span></div>
+            <div><span class="col col9-2"></span></div>
+            <div><span class="col col9-3"></span></div>
+            <div><span class="col col9-4"></span></div>
+            <div class="row9">
+              <div class="row9-1"></div>
+              <div class="row9-2"></div>
+              <div class="row9-3"></div>
+              <div class="row9-4"></div>
+            </div>
 
-        <div><span class="col col9-1"></span></div>
-        <div><span class="col col9-2"></span></div>
-        <div><span class="col col9-3"></span></div>
-        <div><span class="col col9-4"></span></div>
-          <div class="row9">
-            <div class="row9-1"></div>
-            <div class="row9-2"></div>
-            <div class="row9-3"></div>
-            <div class="row9-4"></div>
-          </div>
-
-        <div><span class="col col10-1"></span></div>
-        <div><span class="col col10-2"></span></div>
-        <div><span class="col col10-3"></span></div>
-        <div><span class="col col10-4"></span></div>
-          <div class="row10">
-            <div class="row10-1"></div>
-            <div class="row10-2"></div>
-            <div class="row10-3"></div>
-            <div class="row10-4"></div>
-          </div>
-        </div>
-        
-      </div>
-
-     <!-- INFO BOARD -->
-
-     <div class="instructions">
-        
-        <!-- COLOR OPTIONS, PICK AND DELETE -->
-        <div class="Options">
-          <div class="colorOptions">
-          <span class="blue" id="blueColor"></span>
-          <span class="orange" id="orangeColor"></span>
-          <span class="green" id="greenColor"></span>
-          <span class="purple" id="purpleColor"></span>
-          <span class="pink" id="pinkColor"></span>
-          <span class="yellow" id="yellowColor"></span>
-          </div>
-          <div class="buttons">
-            <span class="pickColor">play</span>
-            <span class="deleteColor">delete</span>
-          </div>
-
-           <!-- LEVEL BOARD   -->
-        <div class="levelBoard">
-          <h3>Master Your Level!</h3>
-          <div class="level">
-          <span class="level" id="beginner">beginner</span>
-          <span class="level" id="advanced">advanced</span>
-          <span class="level" id="expert">expert</span>
-          </div>
-        </div>
-
-          <div class="howToPlay">
-            <div class="info">
-            <h3>How To Play?</h3>
-            <p>In <b>&ltmasterMind/&gt</b>  the player must guess a  secrete code by clicking the above colored buttons. The goal is to arrange different buttons in the correct order in a row. The resulting pattern must match the hidden code at the top of the board.
-              The player has up to 10 turns to crack the code. It consists of 4 pins, which in turn can be selected from 4 colors for the Beginner level, 5 colors for the Advanced level and six colors for the Expert level. A color can be represented several times.</p>
-              <h3>Clues</h3>
-              <p>The narrow column next to the code preparation area serves as clue row. Clue buttons are either black or white.<p>• A black clue means that there is a correct color in the correct place.</p><p>• A white clue means that a correct color is in the wrong place.</p><p>• An empty clue slot means that a wrong color has been placed.</p>
+            <div><span class="col col10-1"></span></div>
+            <div><span class="col col10-2"></span></div>
+            <div><span class="col col10-3"></span></div>
+            <div><span class="col col10-4"></span></div>
+            <div class="row10">
+              <div class="row10-1"></div>
+              <div class="row10-2"></div>
+              <div class="row10-3"></div>
+              <div class="row10-4"></div>
             </div>
           </div>
-         
         </div>
 
-        
+        <!-- INFO BOARD -->
+
+        <div class="instructions">
+          <!-- COLOR OPTIONS, PICK AND DELETE -->
+          <div class="Options">
+            <div class="colorOptions">
+              <span class="blue" id="blueColor"></span>
+              <span class="orange" id="orangeColor"></span>
+              <span class="green" id="greenColor"></span>
+              <span class="purple" id="purpleColor"></span>
+              <span class="pink" id="pinkColor"></span>
+              <span class="yellow" id="yellowColor"></span>
+            </div>
+            <div class="buttons">
+              <span class="pickColor">play</span>
+              <span class="deleteColor">delete</span>
+            </div>
+
+            <!-- LEVEL BOARD   -->
+            <div class="levelBoard">
+              <h3>Master Your Level!</h3>
+              <div class="level">
+                <span class="level" id="beginner">beginner</span>
+                <span class="level" id="advanced">advanced</span>
+                <span class="level" id="expert">expert</span>
+              </div>
+            </div>
+
+            <div class="howToPlay">
+              <div class="info">
+                <h3>How To Play?</h3>
+                <p>
+                  In <b>&ltmasterMind/&gt</b> the player must guess a secrete
+                  code by clicking the above colored buttons. The goal is to
+                  arrange different buttons in the correct order in a row. The
+                  resulting pattern must match the hidden code at the top of the
+                  board.
+                </p>
+                <p>
+                  The player has up to 10 turns to crack the code. It consists
+                  of 4 pins, which in turn can be selected from 4 colors for the
+                  Beginner level, 5 colors for the Advanced level and six colors
+                  for the Expert level. A color can be represented several
+                  times.
+                </p>
+                <h3>Clues</h3>
+                <p>
+                  The narrow column next to the code preparation area serves as
+                  clue row. Clue buttons are either black or white.
+                </p>
+                <p>
+                  • A black clue means that there is a correct color in the
+                  correct place.
+                </p>
+                <p>
+                  • A white clue means that a correct color is in the wrong
+                  place.
+                </p>
+                <p>
+                  • An empty clue slot means that a wrong color has been placed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-
 
     <script src="./js/main.js"></script>
   </body>
