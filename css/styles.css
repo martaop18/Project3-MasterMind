@@ -103,7 +103,7 @@ body{
     justify-content: center;
     width: 50%;
     height: 100%;
-    padding-top: 1em;
+    padding-top: 1.5em;
 }
 .colorOptions{
     display: flex;
@@ -120,7 +120,7 @@ body{
    
  }
 
-.colorOptions, .buttons > span:hover{
+.colorOptions, .buttons, .level > span:hover{
     cursor: pointer;
 }
 
@@ -155,10 +155,38 @@ body{
     text-align: center;
     background-color: #B799FF;
   }
+
+  .level{
+    display: flex;
+    justify-content: center;
+}
+
+  .level > span{
+    border-style: solid;
+    border-color: aliceblue;
+    color: aliceblue;
+    border-radius: 8%;
+    height: 2em;
+    width: 5em;
+    margin: 1em;
+    text-align: center;
+    background-color: #1B9C85;
+  }
+
+  .levelBoard{
+    text-align: center;
+    color:#47A992;
+    /* font-size: small; */
+  }
+
+
   .howToPlay {
     display:grid;
     font-size: small;
     color:#1D267D;
+    text-align: justify;
   }
+
+  
 
   
