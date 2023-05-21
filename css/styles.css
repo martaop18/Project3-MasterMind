@@ -25,6 +25,7 @@ body{
 /* <!-- GAME BOARD  --> */ 
 .gameBox{
     display: flex;
+    flex-direction: row;
     height: 100%;
     width: 100%;
     justify-content:center;
@@ -36,9 +37,10 @@ body{
     display: flex;
     flex-direction: column;
     place-items:center ;
+    /* height: 80%; */
     width: 40%;
-     justify-content: center;
-     align-items: center;
+    justify-content: center;
+    align-items: center;
 
  }
 
@@ -55,7 +57,7 @@ body{
     height: 2.5em;
     width: 2.5em;
     margin: 0.2em;
-    border-color: #FF55BB;
+    border-color: #B799FF;
 
 }
     
@@ -95,15 +97,11 @@ body{
     width: 0.8em;
    } 
    
-
 .instructions {
     display: flex;
-    background-color:  #FFD3A3; 
     color: aliceblue;
     justify-content: center;
     width: 50%;
-    height: 100%;
-    padding-top: 1.5em;
 }
 .colorOptions{
     display: flex;
@@ -149,7 +147,7 @@ body{
 .buttons > span{
     border-style: solid;
     border-radius: 8%;
-    height: 2em;
+    height: 1.5em;
     width: 3.5em;
     margin: 1em;
     text-align: center;
@@ -166,7 +164,7 @@ body{
     border-color: aliceblue;
     color: aliceblue;
     border-radius: 8%;
-    height: 2em;
+    height: 1.5em;
     width: 5em;
     margin: 1em;
     text-align: center;
@@ -176,17 +174,19 @@ body{
   .levelBoard{
     text-align: center;
     color:#47A992;
-    /* font-size: small; */
   }
 
 
   .howToPlay {
-    display:grid;
+    display:flex;
     font-size: small;
     color:#1D267D;
     text-align: justify;
   }
 
   
+/* @media (min-width: 600px){
+    .gambox{flex-direction: row;}
 
-  
+}
+   */
