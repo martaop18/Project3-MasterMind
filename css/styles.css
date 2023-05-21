@@ -3,7 +3,7 @@
   }
 
 body{
-    background-color: #B2A4FF;
+    background-color:white;
     overflow-x: hidden;
     padding: 0;
     margin-top: 1em;
@@ -13,8 +13,6 @@ body{
 /* MAIN CONTAINER: GAME BOARD & INSTRUCTIONS */ 
 
 .gameMainContainer{
-    background-color: whitesmoke;
-    height: 50%;
     display: grid;
     place-items: center;
     color: #B799FF;
@@ -98,6 +96,7 @@ body{
    
 .instructions {
     display: flex;
+    flex-direction: column;
     color: aliceblue;
     justify-content: center;
     width: 50%;
@@ -181,14 +180,17 @@ body{
 
   .howToPlay {
     display:flex;
+    width: 100%;
     font-size: small;
     color:#1D267D;
     text-align: justify;
+    align-items: center;
+    justify-content:center;
   }
 
   
-/* @media (min-width: 600px){
-    .gambox{flex-direction: row;}
+@media (max-width: 600px){
+    .gamebox{width: 50%;}
 
 }
-   */
+   
