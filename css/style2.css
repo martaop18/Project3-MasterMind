@@ -13,19 +13,12 @@ body{
 /* MAIN CONTAINER: GAME BOARD & INSTRUCTIONS */ 
 
 .gameMainContainer{
-
     display: grid;
     place-items: center;
-    align-items: center;
-    justify-content: center;
     color: #B799FF;
     margin: 1em;
     padding: 2em;
-    height: 100%;
 }
-
-
-
 
 /* <!-- GAME BOARD  --> */ 
 .gameBox{
