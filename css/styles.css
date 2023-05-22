@@ -22,7 +22,7 @@ body{
     font-size:large;
     margin: 4em;
     padding: 2em;
-    height: 100%;
+    /* height: 100%; */
     text-decoration: none;
 }
 
@@ -230,11 +230,7 @@ a:link, a:visited, a:active {
 
   .levelBoard{
     text-align: center;
-  
-  }
-
-
-  
+}
 
   #buttonName{
     justify-content: center;
