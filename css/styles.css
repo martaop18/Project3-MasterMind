@@ -3,7 +3,7 @@
   }
 
 body{
-    background-color:white;
+    background-color:rgb(11, 11, 11);
     overflow-x: hidden;
     padding: 0;
     margin-top: 1em;
@@ -19,14 +19,24 @@ body{
     align-items: center;
     justify-content: center;
     color: #B799FF;
-    margin: 1em;
+    font-size:larger;
+    margin: 5em;
     padding: 2em;
     height: 100%;
+    text-decoration: none;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
+.button{background-color: #643A6B;
+    margin: 2em;
+    color: #f4eaea;;
+    padding: 15px 25px;
+    border-radius: 2%;
 
-
+}
 /* <!-- GAME BOARD  --> */ 
 .gameBox{
     display: flex;
@@ -183,7 +193,7 @@ body{
   }
 
 
-  .howToPlay {
+  /* .howToPlay {
     display:flex;
     width: 100%;
     font-size: small;
@@ -191,7 +201,7 @@ body{
     text-align: justify;
     align-items: center;
     justify-content:center;
-  }
+  } */
 
   #buttonName{
     justify-content: center;

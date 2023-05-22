@@ -1,12 +1,6 @@
 
 // SESSION STORAGE
 
-const enviaNombre = () => {
-    let nombre = document.getElementById("inputName").value;
-    window.sessionStorage.setItem("player",nombre);
-}
-
-
 
 
 
