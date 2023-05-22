@@ -1,7 +1,12 @@
 
 // SESSION STORAGE
 
+const savePlayer = ()=>{
+    let player = document.getElementById('playerName').value;
 
+    sessionStorage.setItem('user', player);
+    window.location.href = "../pages/endGame.html"
+}
 
 
 

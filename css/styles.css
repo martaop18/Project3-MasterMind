@@ -6,7 +6,7 @@ body{
     background-color: black;
     overflow-x: hidden;
     padding: 0;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     font-family:sans-serif;
 }
 
@@ -39,7 +39,7 @@ a:link, a:visited, a:active {
 
 .howToPlay {
     display:flex;
-    width: 100%;
+    width: 70%;
     font-size:medium;
     color: #408E91;
     text-align: justify;
@@ -53,18 +53,33 @@ a:link, a:visited, a:active {
   }
 .byMe{
     text-align: center;
+}
 
+.masterPlayer{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
 }
+
+  .masterPlayer > span{
+    border-style: solid;
+    border-color:#643A6B;
+    background-color:#AD7BE9;
+    color: aliceblue;
+    border-radius: 5%;
+    height: 1.5em;
+    width: 5em;
+    margin: 1em;
+    /* text-align:center; */
+  }
+
+  .next, .back > span{
+    color: #f4eaea;
+  }
 /* <!-- GAME BOARD  --> */ 
-.gameBox{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    justify-content:center;
-    align-items: center;
-    margin-top: 3em;
-}
+ 
 .gameBoard {
     display: flex;
     flex-direction: column;
@@ -74,20 +89,25 @@ a:link, a:visited, a:active {
     justify-content: center;
     align-items: center;
  }
+ 
+ .gamebox{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
 .secretCode {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 3em;
-   width: 12em;
+    margin-bottom: 3em;
 }
 .secretCode > span {
     border-radius: 40px;
     border-style: solid ;
     height: 2.5em;
     width: 2.5em;
-    margin: 0.2em;
+    margin: 1em;
     border-color: #B799FF;
 
 }
@@ -98,8 +118,9 @@ a:link, a:visited, a:active {
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    gap: 7px;
+    gap: 8px;
     place-items: center;
+   align-items: center;
 }
     
 .colorBoard > * {
@@ -205,7 +226,7 @@ a:link, a:visited, a:active {
 
   .levelBoard{
     text-align: center;
-    color:#47A992;
+  
   }
 
 
