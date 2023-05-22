@@ -158,6 +158,8 @@ a:link, a:visited, a:active {
 .colorOptions{
     display: flex;
     justify-content: center;
+    padding: 1em;
+    margin-bottom: 2em;
 }
 
 .colorOptions > span{
@@ -167,9 +169,10 @@ a:link, a:visited, a:active {
     height: 2.5em;
     width: 2.5em;
     margin: 0.2em;
+    color: #0f0f0f;
 }
 
-.colorOptions, .buttons, .level > span:hover{
+.colorOptions, .cbuttons, .level > span:hover{
     cursor: pointer;
 }
 
@@ -191,12 +194,12 @@ a:link, a:visited, a:active {
     background-color: #F9F54B;
 }
 
-.buttons{
+.cbuttons{
     display: flex;
     justify-content: center;
 }
 
-.buttons > span{
+.cbuttons > span{
     border-style: solid;
     border-radius: 5%;
     border-color: #B2A4FF;
@@ -204,6 +207,7 @@ a:link, a:visited, a:active {
     width: 3.5em;
     margin: 1em;
     text-align: center;
+    color: #f4eaea;
     background-color: #B799FF;
   }
 
