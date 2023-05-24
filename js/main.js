@@ -5,10 +5,15 @@ const savePlayer = ()=>{
     let player = document.getElementById('playerName').value;
 
     sessionStorage.setItem('user', player);
-    window.location.href = "../pages/endGame.html"
+    window.location.href = "../pages/gameOver.html"
 }
 
+// START THE GAME
+// DEFINING CONSTANS AND VARIABLES
 
+const colors = ['blue','orange','green','purple','pink','yellow']
+let secretCode = [];
+let remainig = [];
 
 
 

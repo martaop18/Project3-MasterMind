@@ -41,8 +41,8 @@ a:link, a:visited, a:active {
     display:flex;
     width: 70%;
     font-size:medium;
-    color: #408E91;
-    text-align: justify;
+    color:#f4eaea;
+    text-align:center;
     align-items: center;
     justify-content:center;
   }
