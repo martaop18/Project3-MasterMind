@@ -9,11 +9,14 @@ const savePlayer = ()=>{
 }
 
 // START THE GAME
-// DEFINING CONSTANS AND VARIABLES
+// DEFINING CONSTANS AND VARIABLES FOR COLOR PICKER
 
-const colors = ['blue','orange','green','purple','pink','yellow']
-let secretCode = [];
-let remainig = [];
+const colorPicker =(r,c )=> {
+
+    let colorsPicker = document.GetElementById
+}
+
+
 
 
 
