@@ -169,7 +169,13 @@ a:link, a:visited, a:active {
     height: 2.5em;
     width: 2.5em;
     margin: 0.2em;
-    color: #0f0f0f;
+    /* color: #0f0f0f; */
+}
+
+input[type='color']{
+    height: 3em;
+    width: 3em;
+    margin-top: 5em;
 }
 
 .colorOptions, .cbuttons, .level > span:hover{
@@ -197,6 +203,7 @@ a:link, a:visited, a:active {
 .cbuttons{
     display: flex;
     justify-content: center;
+    margin-top: 5em;
 }
 
 .cbuttons > span{
