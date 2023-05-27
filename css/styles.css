@@ -113,7 +113,7 @@ a:link, a:visited, a:active {
 
 }
 
-#board {
+/* #board {
 
     width: 20em;
 
@@ -142,9 +142,9 @@ a:link, a:visited, a:active {
     justify-content: center;
     align-items: center;
     margin-top: 2em;
-}
+} */
     
-/* .colorBoard{
+.colorBoard{
     height: 100%;
     width: 100%;
     display: grid;
@@ -179,7 +179,7 @@ a:link, a:visited, a:active {
     height: 0.8em;
     width: 0.8em;
    } 
-    */
+   
 .instructions {
     display: flex;
     flex-direction: column;
