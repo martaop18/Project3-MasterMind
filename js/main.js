@@ -9,12 +9,6 @@ const savePlayer = ()=>{
     
 }
 
-// START THE GAME
-// DEFINING CONSTANS AND VARIABLES FOR COLOR PICKER
-
-
-
-
 
 
 

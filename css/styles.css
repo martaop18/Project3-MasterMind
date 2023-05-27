@@ -15,12 +15,14 @@ body{
 .gameMainContainer{
 
     display: grid;
+
     place-items: center;
     align-items: center;
+    align-content: center;
     justify-content: center;
     color: #B799FF;
     font-size:large;
-    margin: 4em;
+    margin-top: 4em;
     padding: 2em;
     text-decoration: none;
 }
@@ -235,7 +237,11 @@ input:focus{
 
   .level{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: center;
+    
+
 }
 
   .level > span{
@@ -250,9 +256,12 @@ input:focus{
     background-color: #1B9C85;
   }
 
-  .levelBoard{
-    text-align: center;
-}
+  /* .levelBoard{
+    /* text-align: center;
+    align-self: center; */
+    /* justify-content: center;
+    align-items: center;
+} */ */
 
   #buttonName{
     justify-content: center;
