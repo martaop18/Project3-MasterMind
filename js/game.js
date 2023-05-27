@@ -1,5 +1,5 @@
 // START THE GAME
-// DEFINING CONSTANS AND VARIABLES FOR COLOR PICKER
+// DEFINING CONSTANS AND VARIABLES FOR THE GAME
 
 let arrayGanador = [];
 
@@ -7,12 +7,12 @@ let arrayGanador = [];
 const generaGanadora = () => {
   //De forma hardcodeada voy a inventarme los colores posibles...
   let coloresPosibles = [
-    "rojo",
-    "verde",
-    "azul",
-    "amarillo",
-    "rosa",
-    "naranja",
+    '#19A7CE',
+    '#F97B22',
+    '#00FFCA', 
+    '#F9F54B',
+    '#AD7BE9',
+    '#FF55BB'
   ];
 
   for (let i = 0; i < 4; i++) {
@@ -27,7 +27,7 @@ const generaGanadora = () => {
 
 generaGanadora();
 
-let tablero = document.getElementById("tablero");
+let tablero = document.getElementById("board");
 
 let dificultad = 10;
 let contador = 1;
@@ -83,11 +83,11 @@ const pintaTablero = () => {
   //Al no haber ganado nadie, el código continúa por aquí debajo...
 
   if (dificultad > 1) {
-    document.getElementById(`fila${contador}`).removeAttribute("onclick");
+    document.getElementById(`row${contador}`).removeAttribute("onclick");
 
     contador++;
 
-    tablero.innerHTML += `<div id='fila${contador}' class='fila' onclick='pintaBola(${contador})'>${contador}</div>`;
+    tablero.innerHTML += `<div id='row${contador}' class='row' onclick='pintaBola(${contador})'>${contador}</div>`;
 
     dificultad -= 1;
   } else {
