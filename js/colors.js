@@ -1,28 +1,22 @@
 
 // DEFINING CONST FOR SCREEN COLORS
 const myColors = ['#19A7CE','#F97B22','#00FFCA','#AD7BE9','#FF55BB','#F9F54B'];
+console.log(myColors)
 
-// DEFINING THE PICKER COLOR BOX
-const colorBox = document.getElementById('colorOptions');
+// SAVING COLORS ON SCREEN 
 
-// function accordingToLevel(total){
-//     for(let i = 1; i <= total; i++){
-//         const picker = document.createElement('input');
-//         picker.value = myColors[i-1];
-//         picker.type ='color';
-//         colorBox.appendChild(picker);
-//     }
-// }
+const saveColors = () => {
+    const colors = document.getElementsByClassName ('pickedColor');
+    const selectedColor = [];
 
-// ADDING THE EVENT TO  PLAY BUTTON 
+Array.from(colors).forEach(color =>{
+    const setBackG = color.style.backgroundColor;
+    selectedColor.push(setBackG);
+});
+ sessionStorage.setItem('selectedColor', JSON.stringify(selectedColor));
 
-// const pickColor = document.getElementsByClassName('pickColor');
-// pickColor.addEventlistener ('click', ()=>{
-//     const  cPickers = Array.from(
-//         document.querySelectorAll('#colorOptions > input')
-//     );
+}
 
-//     const finalColors = cPickers.map((picker) => picker.value);
-//     sessionStorage.setItem('finalColors', JSON.stringify(finalColors));
-//     window.Location = '../game.html'
-// });
+ 
+
+// 
