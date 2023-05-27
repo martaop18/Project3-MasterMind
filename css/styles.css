@@ -176,7 +176,7 @@ a:link, a:visited, a:active {
     cursor: pointer;
 }
 
-.blue {
+/* .blue {
     background-color: #19A7CE;}
     
 .orange{
@@ -192,7 +192,7 @@ a:link, a:visited, a:active {
 }
 .yellow{
     background-color: #F9F54B;
-}
+} */
 
 .cbuttons{
     display: flex;

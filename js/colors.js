@@ -1,5 +1,4 @@
 
-
 // DEFINING CONST FOR SCREEN COLORS
 const myColors = ['#19A7CE','#F97B22','#00FFCA','#AD7BE9','#FF55BB','#F9F54B'];
 
@@ -15,7 +14,15 @@ function accordingToLevel(total){
     }
 }
 
-// ADDING THE EVENT TO BUTTON PLAY
+// ADDING THE EVENT TO  PLAY BUTTON 
 
 const pickColor = document.getElementsByClassName('pickColor');
-pickColor.addEventlistener('click')
+pickColor.addEventlistener('click', ()=>{
+    const  cPickers = Array.from(
+        document.querySelectorAll('#colorOptions > input')
+    );
+
+    const finalColors = cPickers.map((picker) => picker.value);
+    sessionStorage.setItem('finalColors', JSON.stringify(finalColors));
+    window.Location = '../game.html'
+});
