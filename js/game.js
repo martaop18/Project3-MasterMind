@@ -33,3 +33,14 @@ const row10 = new Row();
 for(i = 0; i<4; i++){
     secretCode.push(myColors[Math.floor(Math.random()*4)]);
 }
+
+// / SHOWING RANDOM COLORS ON SCREEN
+function bGcolor(e,c){
+    $(`${e}`).css('background-color', `${c}`);
+}
+
+function checkRow(array1,row,next,last){
+    if(array1.join('') === secretCode.join('')){
+        winner = true;
+    }
+}

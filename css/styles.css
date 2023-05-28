@@ -110,7 +110,6 @@ a:link, a:visited, a:active {
     width: 2.5em;
     margin: 1em;
     border-color: #B799FF;
-
 }
 
 .colorBoard{
@@ -220,9 +219,32 @@ input:focus{
 .bottom{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 1em;
 }
 .bottom > span{
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #B2A4FF;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.3em;
+    color: #f4eaea;
+}
+
+.bottom > span:hover{
+    cursor:pointer;
+}
+
+.bottom2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+}
+.bottom2 > span{
     border-style: solid;
     border-radius: 5%;
     border-color: #B2A4FF;
@@ -233,7 +255,8 @@ input:focus{
     color: #f4eaea;
     background-color: #B799FF;
 }
-.bottom > span:hover{
+
+.bottom2 > span:hover{
     cursor:pointer;
 }
 .cbuttons{
