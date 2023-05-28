@@ -39,8 +39,11 @@ function bGcolor(e,c){
     $(`${e}`).css('background-color', `${c}`);
 }
 
-function checkRow(array1,row,next,last){
+function checkRow(array1, row, next, last){
+    // CHECKING IF THE ANSWER IS CORRECT === SAME AS SECRET CODE
     if(array1.join('') === secretCode.join('')){
         winner = true;
+        $('.secretCode > span').slideDown();
+        $('.header').text
     }
 }
