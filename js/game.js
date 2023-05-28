@@ -39,6 +39,12 @@ function bGcolor(e,c){
     $(`${e}`).css('background-color', `${c}`);
 }
 
+// USING SPREAD OPERATOR TO COPY THE SECRET CODE
+
+let secretCode2 = [...secretCode];
+// console.log(secretCode2);
+
+
 function checkRow(array1, row, next, last){
 // CHECKING IF THE ANSWER IS CORRECT === SAME AS SECRET CODE
 
