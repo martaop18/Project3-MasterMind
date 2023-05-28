@@ -1,4 +1,4 @@
-// START THE GAME
+// STARTING THE GAME
 // DEFINING CONSTANS AND VARIABLES FOR THE  BEGGINER LEVEL GAME
 
 const myColors = ["#19A7CE", "#F97B22", "#00FFCA", "#F9F54B"];
@@ -57,15 +57,40 @@ function checkRow(array1, row, next, last) {
       $(`.rows${row} > .dot${counter2}`).css("background-color", "black");
     }
   } else {
+    // CHECKING BLACK CLUES
+    for (i = 0; i < array1.length; i++) {
+      if (array1[i] === secretCode[i]) {
+        $(`.rows${row} > .dot${counter2}`).css("background-color", "black");
+        secretCode2.splice(i, 1, "");
+        staying.push("empty");
+        counter2 += 1;
+      } else {
+        staying.push(array1[i]);
+      }
+    }
+    // CHECKING WHITE CLUES
+    for (i = 0; i < array1.length; i++) {
+      if (secretCode2.includes(staying[i])) {
+        secretCode2.splice(secretCode2.indexOf(staying[i]), 1, "");
+        $(`.rows${row} > .dot${counter2}`).css("background-color", "white");
+        counter2 += 1;
+      }
+    }
+    //  SWITCHING TURNS
+    counter = 1;
+    counter2 = 1;
+    next.turn = true;
+    last.turn = false;
+    secretCode2 = [...secretCode];
+    staying = [];
   }
 }
 // ---------------------
 // DISPLAYING THE RAMDON COLOR TO SECRET CODE ON SCREEN
-bGcolor('.codeColor1', `${secretCode[0]}`);
-bGcolor('.codeColor2', `${secretCode[1]}`);
-bGcolor('.codeColor3', `${secretCode[2]}`);
-bGcolor('.codeColor4', `${secretCode[3]}`);
-
+bGcolor(".codeColor1", `${secretCode[0]}`);
+bGcolor(".codeColor2", `${secretCode[1]}`);
+bGcolor(".codeColor3", `${secretCode[2]}`);
+bGcolor(".codeColor4", `${secretCode[3]}`);
 
 // CHECKING ROWS IN THE GAME
 
