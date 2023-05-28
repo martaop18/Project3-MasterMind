@@ -40,10 +40,13 @@ function bGcolor(e,c){
 }
 
 function checkRow(array1, row, next, last){
-    // CHECKING IF THE ANSWER IS CORRECT === SAME AS SECRET CODE
+// CHECKING IF THE ANSWER IS CORRECT === SAME AS SECRET CODE
+
     if(array1.join('') === secretCode.join('')){
         winner = true;
+    // SETTING WINNER MESSAGE
+
         $('.secretCode > span').slideDown();
-        $('.header').text
+        $('.header').text('wellDoneChampion!').css('color','white')
     }
 }
