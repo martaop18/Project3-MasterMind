@@ -1,41 +1,40 @@
 
 ##       Tercer proyecto-juego masterMind 
 
-Este es el tercer proyecto de mi entrenamiento como full stack developer. En este proyecto nos han pedido implementar una aplicación que permita jugar el juego master mind con variadas exigencias; entre ellas, el uso de diferentes niveles de juego con diferentes propiedades para cada uno, comprobación de situaciones ante diferentes escenarios del juego.  
+Este es el tercer proyecto de mi entrenamiento como full stack developer. En este proyecto nos han pedido implementar una aplicación que permita jugar el juego master mind con variadas exigencias utilizando el lenguaje de programación javaScript. 
+ Entre las exigencias del reto se encuentran el uso de diferentes niveles de juego que cuentan con diferentes propiedades, así como la comprobación de situaciones ante diferentes escenarios del juego.  
 
 ### Proceso:
-El proyecto se encuentra en proceso de elaboración, me he encontrado ante un reto bastante complejo debido a la falta de práctica ante el nuevo lenguaje de programción exigido para desarrollo del mismo.
-El proyecto lo estoy realizando utilizando HTML5,CSS3 y javaScript .
-Este  cuenta con diferentes vistas desde las cuales se va accediendo a los diferentes tableros.
+El proyecto se encuentra en proceso de elaboración, me he encontrado ante un reto bastante complejo debido a la falta de práctica/experiencia ante el nuevo lenguaje de programción exigido para desarrollo del mismo.
+Para realizar el proyecto  estoy utilizando HTML5,CSS3 y javaScript .
+El proyecto cuenta con diferentes vistas desde las cuales se va accediendo a los diferentes tableros.
 
 
 ### Página Home 
 ![Alt text](img/homeView.jpg)
 
-### Página 
-![Alt text](i)
+### Página de instrucciones 
+![Alt text](img/instructionsView.jpg)
 
-### Página 
-![Alt text](img/res)
-
-
-### Página 
-![Alt text](img/)
-
-### Página 
-![Alt text](img/r)
+### Página acceso al juego
+![Alt text](img/playerView.jpg)
 
 
-### Página 
-![Alt text](img/)
+### Página nivelesdel juego
+![Alt text](img/levelView.jpg)
 
-### Página Contacto Mobile first
-![Alt text](img/)
+### Página selección colores-nivel experto
+![Alt text](img/colorsViewjpg.jpg)
+
+
+### Página tablero de juego-nivel principiante
+![Alt text](img/gameBoard.jpg)
+
 
 
 
 #### Link al repositorio
-
+https://github.com/martaop18/Project3-MasterMind
 
 
 
