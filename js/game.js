@@ -5,8 +5,8 @@ const myColors = ["#19A7CE", "#F97B22", "#00FFCA", "#F9F54B"];
 const selectedColor = [];
 let secretCode = [];
 let staying = [];
-let rowCounter = 1;
-let colCounter = 1;
+let counter = 1;
+let counter2 = 1;
 let winner = false;
 
 // DEFINING ROW CLASS AND ITS METHODS
@@ -59,6 +59,13 @@ function checkRow(array1, row, next, last) {
   } else {
   }
 }
+// ---------------------
+// DISPLAYING THE RAMDON COLOR TO SECRET CODE ON SCREEN
+bGcolor('.codeColor1', `${secretCode[0]}`);
+bGcolor('.codeColor2', `${secretCode[1]}`);
+bGcolor('.codeColor3', `${secretCode[2]}`);
+bGcolor('.codeColor4', `${secretCode[3]}`);
+
 
 // CHECKING ROWS IN THE GAME
 
