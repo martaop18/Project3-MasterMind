@@ -2,6 +2,7 @@
 // DEFINING CONSTANS AND VARIABLES FOR THE  BEGGINER LEVEL GAME
 
 const myColors = ['#19A7CE','#F97B22','#00FFCA', '#F9F54B',];
+const selectedColor= [];
 let secretCode = [];
 let staying = [];
 let rowCounter = 1;
@@ -53,6 +54,17 @@ function checkRow(array1, row, next, last){
     // SETTING WINNER MESSAGE
 
         $('.secretCode > span').slideDown();
-        $('.header').text('wellDoneChampion!').css('color','white')
+        $('.header').text('wellDoneChampion!').css('color','white');
+        for(i = 0; i<array1.length; i++) {
+            $(`.rows${row} > .dot${counter2}`).css('background-color', 'black');
+            
+        }
+    } else{
+
     }
 }
+
+// CHECKING ROWS IN THE GAME
+
+row10.turn = true;
+$('.bottom2 > span')
