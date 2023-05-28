@@ -199,7 +199,7 @@ input:focus{
     cursor: pointer;
 }
 
-/* .blue {
+.blue {
     background-color: #19A7CE;}
     
 .orange{
@@ -215,8 +215,27 @@ input:focus{
 }
 .yellow{
     background-color: #F9F54B;
-} */
+}
 
+.bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.bottom > span{
+    border-style: solid;
+    border-radius: 5%;
+    border-color: #B2A4FF;
+    height: 1.5em;
+    width: 3.5em;
+    margin: 1em;
+    text-align: center;
+    color: #f4eaea;
+    background-color: #B799FF;
+}
+.bottom > span:hover{
+    cursor:pointer;
+}
 .cbuttons{
     display: flex;
     justify-content: center;
@@ -240,8 +259,6 @@ input:focus{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    
-
 }
 
   .level > span{

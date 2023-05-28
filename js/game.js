@@ -29,4 +29,7 @@ const row9 = new Row();
 const row10 = new Row();
 
 
-
+// / DEFINING THE SECRET CODING FUNCTION
+for(i = 0; i<4; i++){
+    secretCode.push(myColors[Math.floor(Math.random()*4)]);
+}
