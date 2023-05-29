@@ -6,7 +6,6 @@ body{
     background-color: black;
     overflow-x: hidden;
     padding: 0;
- 
     font-family:sans-serif;
 }
 #header{
@@ -39,7 +38,9 @@ a:link, a:visited, a:active {
     padding: 15px 25px;
     border-radius: 2%;
 }
-
+.gHeader{
+    color: #B799FF;
+}
 .howToPlay {
     display:flex;
     width: 70%;
