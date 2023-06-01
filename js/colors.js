@@ -6,6 +6,14 @@ const myColors = ['#19A7CE','#F97B22','#00FFCA', '#F9F54B','#AD7BE9','#FF55BB'];
 console.log(myColors);
 
 
+
+const storeColors = () => {
+    const selectedColors = [];
+    colorInputs.forEach(input => {
+      selectedColors.push(input.value);
+    });
+    localStorage.setItem("selectedColors", JSON.stringify(selectedColors));
+  };
 //  PRINTING COLORS ON SCREEN
 
 const colorPicker = (xId, yId) => {
