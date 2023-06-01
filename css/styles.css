@@ -88,7 +88,6 @@ a:link, a:visited, a:active {
     display: flex;
     flex-direction: column;
     place-items:center ;
-    /* height: 80%; */
     width: 40%;
     justify-content: center;
     align-items: center;
@@ -204,23 +203,6 @@ input:focus{
     cursor: pointer;
 }
 
-.blue {
-    background-color: #19A7CE;}
-    
-.orange{
-    background-color: #F97B22;
-}
-.green{
-    background-color:#00FFCA ;}
-.purple{
-    background-color: #AD7BE9;
-}
-.pink{
-    background-color: #FF55BB;
-}
-.yellow{
-    background-color: #F9F54B;
-}
 
 .bottom{
     display: flex;
@@ -274,7 +256,7 @@ input:focus{
 .cbuttons > span{
     border-style: solid;
     border-radius: 5%;
-    border-color: #B2A4FF;
+    border-color: #643A6B;
     height: 1.5em;
     width: 3.5em;
     margin: 1em;
@@ -292,22 +274,17 @@ input:focus{
 
   .level > span{
     border-style: solid;
-    border-color:#408E91;
+    border-color:#643A6B;
     color: aliceblue;
     border-radius: 5%;
-    height: 1.5em;
+    height: 2.5em;
     width: 5em;
-    margin: 1em;
+    margin: 4em;
     text-align: center;
-    background-color: #1B9C85;
+    background-color: #B799FF;
   }
 
-  /* .levelBoard{
-    /* text-align: center;
-    align-self: center; */
-    /* justify-content: center;
-    align-items: center;
-} */ */
+
 
   #buttonName{
     justify-content: center;
