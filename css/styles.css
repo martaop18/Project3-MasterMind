@@ -114,7 +114,10 @@ a:link, a:visited, a:active {
     margin: 1em;
     border-color: #B799FF;
 }
-
+/* .pickCol {
+    display: flex;
+    flex-direction: column;
+} */
 .colorBoard{
     height: 100%;
     width: 100%;

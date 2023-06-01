@@ -1,50 +1,12 @@
 
-console.log('colors');
-
-// CONST FOR SCREEN COLORS
-const myColors = ['#19A7CE','#F97B22','#00FFCA', '#F9F54B','#AD7BE9','#FF55BB'];
-console.log(myColors);
-
-
-
-const storeColors = () => {
-    const selectedColors = [];
-    colorInputs.forEach(input => {
-      selectedColors.push(input.value);
-    });
-    localStorage.setItem("selectedColors", JSON.stringify(selectedColors));
-  };
-//  PRINTING COLORS ON SCREEN
-
-const colorPicker = (xId, yId) => {
-    let colorPickerInput = document.getElementById(xId);
-    let colorBoard = document.getElementById(yId);
-
-
-    colorPickerInput.oninput = () => {
-        colorBoard.style.backgroundColor = colorPickerInput.value;
+const pickedColors = (colorInputId) => {
+    let colorInput = document.getElementById(colorInputId)
+      pickedColors.push(input.value);
     }
-}
-
- colorPicker ('cPblue','blueColor');
- colorPicker ('cPorange','orangeColor');
- colorPicker ('cPgreen','greenColor');
- colorPicker ('cPyellow','yellowColor');
- 
-
-
-
- 
-// SAVING COLORS ON SCREEN 
-
-const saveColors = () => {
-    const colors = document.getElementsByClassName('pickedColor');
-    const selectedColor = [];
-
-Array.from(colors).forEach(color =>{
-    const setBackG = color.style.backgroundColor;
-    selectedColor.push(setBackG);
-});
- sessionStorage.setItem('selectedColor', JSON.stringify(selectedColor));
-
-}
+    pickedColors('colorPicker1');
+    pickedColors('colorPicker2');
+    pickedColors('colorPicker3');
+    pickedColors('colorPicker4');
+  
+    sessionStorage.setItem("pickedColors", JSON.stringify(pickedColors));
+  
