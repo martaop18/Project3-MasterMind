@@ -22,8 +22,7 @@ const colorPicker = (xId, yId) => {
  colorPicker ('cPorange','orangeColor');
  colorPicker ('cPgreen','greenColor');
  colorPicker ('cPyellow','yellowColor');
- colorPicker ('cPpurple','purpleColor');
- colorPicker ('cPpink','pinkColor');
+ 
 
 
 
