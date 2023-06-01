@@ -1,12 +1,17 @@
 
-const pickedColors = (colorInputId) => {
-    let colorInput = document.getElementById(colorInputId)
-      pickedColors.push(input.value);
-    }
-    pickedColors('colorPicker1');
-    pickedColors('colorPicker2');
-    pickedColors('colorPicker3');
-    pickedColors('colorPicker4');
+const storeColors = () => {
+  const pickedColors = [];
+  colorInputs.forEach(input => {
+    pickedColors.push(input.value);
+  });
+  localStorage.setItem("pickedColors", JSON.stringify(pickedColors));
+};
+
+
+
+
+
+
+
   
-    sessionStorage.setItem("pickedColors", JSON.stringify(pickedColors));
-  
+
