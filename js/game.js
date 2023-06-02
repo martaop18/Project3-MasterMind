@@ -1,12 +1,15 @@
 // GAME BOARD-GETTING THE ARRAY WITH THE SELECTED COLORS
 
+const arrayColors = JSON.parse(sessionStorage.getItem("arrayColors"));
+console.log('Arraycolors', arrayColors)
+
 const setColors = () => {
   const span1 = document.getElementById("1");
   const span2 = document.getElementById("2");
   const span3 = document.getElementById("3");
   const span4 = document.getElementById("4");
 
-const arrayColors = JSON.parse(sessionStorage.getItem("arrayColors"));
+
 
   if (arrayColors && arrayColors.length >= 4) {
     span1.style.backgroundColor = arrayColors[0];
@@ -18,20 +21,24 @@ const arrayColors = JSON.parse(sessionStorage.getItem("arrayColors"));
 
 setColors();
 
-// CREATING THE SECRET CODE--------
-
-let secretCode = [];
-let userColors = [];
-let captureRandom = [];
+// DEFINING THE SECRET CODE--------
 
 
 const colorsRandom = () => {
-  const arrayColors = [];
-  for (let i=0; i<4; i++) {
-    let randomIndex = Math.floor(Math.random()*arrayColors.length);
-    secretCode.push(arrayColors[randomIndex]);
+let secretCode = [...arrayColors].sort(() => Math.random() -0.5)
+console.log('Secretcode', secretCode);
   }
-}
+
 colorsRandom();
-console.log(secretCode);
+
+// ...DEFINING THE USER  OPTIONS BY ROW
+
+const userOptions = () => {
+  const rows = [];
+  for (let i = 0; i < 10; i++) {
+    
+
+  }
+
+}
 
