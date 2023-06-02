@@ -33,12 +33,6 @@ colorsRandom();
 
 // ...DEFINING THE USER  OPTIONS BY ROW
 
-const userOptions = () => {
-  const rows = [];
-  for (let i = 0; i < 10; i++) {
-    
+// PRINTING COLORS ON SCREEN BY THE USER
 
-  }
-
-}
 
