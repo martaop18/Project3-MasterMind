@@ -43,18 +43,14 @@ a:link, a:visited, a:active {
 }
 .howToPlay {
     display:flex;
-    width: 70%;
+    width: 50%;
     font-size:medium;
     color:#f4eaea;
     text-align:center;
     align-items: center;
     justify-content:center;
   }
-  .warning{
-    margin-top: 3em;
-    text-align: center;
-    color: #B799FF
-  }
+
 .byMe{
     text-align: center;
 }
@@ -113,10 +109,7 @@ a:link, a:visited, a:active {
     margin: 1em;
     border-color: #B799FF;
 }
-/* .pickCol {
-    display: flex;
-    flex-direction: column;
-} */
+
 .colorBoard{
     height: 100%;
     width: 100%;

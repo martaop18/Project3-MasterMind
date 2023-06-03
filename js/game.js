@@ -47,3 +47,35 @@ const printColor = (color) => {
     currentCol = 1;
   }
 }
+
+// DEFINING CONSTANTS TO STORE COLORS ON THE BOARD
+const saveColor = () => {
+  span1.addEventListener("click", () => {
+    const selectedColor1 = span1.style.backgroundColor;
+    printColor(selectedColor1);
+  });
+  span2.addEventListener("click", () => {
+    const selectedColor2 = span2.style.backgroundColor;
+    printColor(selectedColor2);
+  });
+  span3.addEventListener("click", () => {
+    const selectedColor3 = span3.style.backgroundColor;
+    printColor(selectedColor3);
+  });
+  span4.addEventListener("click", () => {
+    const selectedColor4 = span4.style.backgroundColor;
+    printColor(selectedColor4);
+  });
+}
+saveColor();
+
+// DEFINING CONSTANT FOR ENDING LAST TURN
+const nexRow = ()=>{
+  currentRow++;
+  if (currentRow > 10){
+    console.log('sorry, try next time');
+  }
+console.log(currentCol, 'this  is the currect col')
+console.log(currentRow, 'this  is the currect row')
+currentCol = 1;
+}
