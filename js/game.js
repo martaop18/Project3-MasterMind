@@ -3,9 +3,7 @@
 const arrayColors = JSON.parse(sessionStorage.getItem("arrayColors"));
 console.log('Arraycolors', arrayColors)
 
-// DEFINING THE SECRET CODE--------
-
-
+// DEFINING THE SECRET CODE---------------------------------------
 const colorsRandom = () => {
   let secretCode = [...arrayColors].sort(() => Math.random() -0.5)
   console.log('Secretcode', secretCode);
@@ -13,8 +11,7 @@ const colorsRandom = () => {
   
   colorsRandom();
 
-
-// DEFINING CONSTANTS TO WORK FURTHER WITH THEM
+// DEFINING CONSTANTS TO WORK FURTHER WITH THEM---------------------
 
   const span1 = document.getElementById("1");
   const span2 = document.getElementById("2");
@@ -25,10 +22,7 @@ const colorsRandom = () => {
   const secretDiv3 = document.getElementById("codeColor3");
   const secretDiv4 = document.getElementById("codeColor4");
   
-  
-  
-  
-
+  // CONST TO SET COLORS ON THE BOARD---------------------------------  
 
   const setColors = () => {
   if (arrayColors && arrayColors.length >= 4) {
@@ -38,7 +32,18 @@ const colorsRandom = () => {
     span4.style.backgroundColor = arrayColors[3];
   }
 };
-
 setColors();
 
+// DEFINING VARIABLES TO PRINT COLORS ON EACH ROW------------------------
 
+let currentRow = 1;
+let currentCol = 1;
+
+const printColor = (color) => {
+  const col = document.getElementById(`fila${currentRow}-${currentCol}`);
+  col.style.backgroundColor = color;
+  currentCol++;
+  if (currentCol > 4){
+    currentCol = 1;
+  }
+}
