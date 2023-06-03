@@ -113,3 +113,32 @@ console.log(col3ToHex);
 console.log(col4ToHex);
 
 console.log('color 1-1', col1);
+
+const dot1 = document.getElementById(`dot${currentRow}-1`);
+const dot2 = document.getElementById(`dot${currentRow}-2`);
+const dot3 = document.getElementById(`dot${currentRow}-3`);
+const dot4 = document.getElementById(`dot${currentRow}-4`);
+
+console.log('this is the secret code ', secretCode);
+
+// COMPARING ADDED COLORS WITH THE SECRET CODE AND CHECKING BLACK AND WHITE CLUES
+if (col1ToHex === secretCode[0]) {
+  dot1.style.backgroundColor = "black";
+}else{
+  dot1.style.backgroundColor = "white";
+}
+if (col2ToHex === secretCode[1]) {
+  dot2.style.backgroundColor = "black";
+}else{
+  dot2.style.backgroundColor = "white";
+}
+if (col3ToHex === secretCode[2]) {
+  dot3.style.backgroundColor = "black";
+}else{
+  dot3.style.backgroundColor = "white";
+}
+if (col1ToHex === secretCode[3]) {
+  dot4.style.backgroundColor = "black";
+}else{
+  dot4.style.backgroundColor = "white";
+}
