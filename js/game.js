@@ -73,7 +73,7 @@ const saveColor = () => {
 saveColor();
 
 // DEFINING CONSTANT FOR ENDING LAST TURN
-const nexRow = () => {
+const nextRow = () => {
   currentRow++;
   if (currentRow > 10){
     console.log('Sorry, try next time');
@@ -91,7 +91,7 @@ const col1 = document.getElementById(`fila${currentRow}-1`).style.backgroundColo
 const col2 = document.getElementById(`fila${currentRow}-2`).style.backgroundColor;
 const col3 = document.getElementById(`fila${currentRow}-3`).style.backgroundColor;
 const col4 = document.getElementById(`fila${currentRow}-4`).style.backgroundColor;
-}
+
 
 // ADDING FUNCTION TO CHANGE COLOR VALUE FROM RGB TO HEX (COPIED FROM STACK OVERFLOW)
 
@@ -103,6 +103,7 @@ function rgbToHex(rgb) {
 
   const hex = "#" + match.slice(1).map(component => parseInt(component).toString(16).padStart(2, '0')).join('');
   return hex;
+
 }
 
 const col1ToHex = rgbToHex(col1);
@@ -166,10 +167,10 @@ if (col1ToHex === secretCode[0] && col2ToHex === secretCode[1] && col3ToHex === 
 
   } else {
     console.log('colors are not the same');
-    nexRow();
+    nextRow();
 }
-
+};
 // CHECKING EACH ROW FUNCTION
 
 const checkButton = document.getElementById('check');
-checkButton.addEventListener('click', checkButton);
+checkButton.addEventListener('click', checkCombination);

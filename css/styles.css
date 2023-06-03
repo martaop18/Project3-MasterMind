@@ -3,7 +3,7 @@
   }
 
 body{
-    background-color: rgb(32, 28, 28);
+    background-color: rgb(23, 22, 22);
     overflow-x: hidden;
     padding: 0;
     font-family:sans-serif;
@@ -131,7 +131,7 @@ a:link, a:visited, a:active {
     border-style: solid ;
     height: 2.5em;
     width: 2.5em;
-    color: #FF55BB;
+    color: #a19494;
 }
 .rows1, .rows2, .rows3, .rows4, .rows5, .rows6, .rows7, .rows8, .rows9, .rows10{
     display: grid;
@@ -141,7 +141,8 @@ a:link, a:visited, a:active {
 
 .rows1 > div , .rows2 > div, .rows3 > div, .rows4 > div, .rows5 > div, .rows6 > div, .rows7 > div, .rows8 > div, .rows9 > div, .rows10 > div {
     border-radius: 20px;
-    border-style: solid ;
+    border-style: solid;
+    border-color: #a19494;
     height: 0.8em;
     width: 0.8em;
    } 
