@@ -35,4 +35,5 @@ colorsRandom();
 
 // PRINTING COLORS ON SCREEN BY THE USER
 
+let printedColors
 
