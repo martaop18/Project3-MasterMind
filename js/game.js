@@ -4,9 +4,12 @@ const arrayColors = JSON.parse(sessionStorage.getItem("arrayColors"));
 console.log('Arraycolors', arrayColors)
 
 // DEFINING THE SECRET CODE---------------------------------------
+let secretCode = [];
 const colorsRandom = () => {
-  let secretCode = [...arrayColors].sort(() => Math.random() -0.5)
-  console.log('Secretcode', secretCode);
+  if (secretCode.length === 0)
+  secretCode = [...arrayColors].sort(() => Math.random() -0.5)
+  console.log('the secret code is', secretCode);
+  return secretCode;
     }
   
   colorsRandom();
@@ -46,34 +49,35 @@ const printColor = (color) => {
   if (currentCol > 4){
     currentCol = 1;
   }
-}
+};
 
 // DEFINING CONSTANTS TO STORE COLORS ON THE BOARD
 const saveColor = () => {
   span1.addEventListener("click", () => {
     const selectedColor1 = span1.style.backgroundColor;
     printColor(selectedColor1);
-  });
+  })
   span2.addEventListener("click", () => {
     const selectedColor2 = span2.style.backgroundColor;
     printColor(selectedColor2);
-  });
+  })
   span3.addEventListener("click", () => {
     const selectedColor3 = span3.style.backgroundColor;
     printColor(selectedColor3);
-  });
+  })
   span4.addEventListener("click", () => {
     const selectedColor4 = span4.style.backgroundColor;
     printColor(selectedColor4);
-  });
+  })
 }
 saveColor();
 
 // DEFINING CONSTANT FOR ENDING LAST TURN
-const nexRow = ()=>{
+const nexRow = () => {
   currentRow++;
   if (currentRow > 10){
-    console.log('sorry, try next time');
+    console.log('Sorry, try next time');
+    return;
   }
 console.log(currentCol, 'this  is the currect col')
 console.log(currentRow, 'this  is the currect row')
@@ -106,13 +110,16 @@ const col2ToHex = rgbToHex(col2);
 const col3ToHex = rgbToHex(col3);
 const col4ToHex = rgbToHex(col4);
 
-
 console.log(col1ToHex);
 console.log(col2ToHex);
 console.log(col3ToHex);
 console.log(col4ToHex);
 
 console.log('color 1-1', col1);
+console.log('color 1-2', col2);
+console.log('color 1-3', col3);
+console.log('color 1-4', col4);
+
 
 const dot1 = document.getElementById(`dot${currentRow}-1`);
 const dot2 = document.getElementById(`dot${currentRow}-2`);
@@ -142,3 +149,27 @@ if (col1ToHex === secretCode[3]) {
 }else{
   dot4.style.backgroundColor = "white";
 }
+
+// SETING WINNER CONDITION
+if (col1ToHex === secretCode[0] && col2ToHex === secretCode[1] && col3ToHex === secretCode[2] && col4ToHex === secretCode[3]) {
+  console.log('You did it!');
+
+  const setColorCode = () => {
+    if(arrayColors && arrayColors.length >= 4){
+      secretDiv1.style.backgroundColor = col1;
+      secretDiv2.style.backgroundColor = col2;
+      secretDiv3.style.backgroundColor = col3;
+      secretDiv4.style.backgroundColor = col4;
+    }
+  }
+  setColorCode();
+
+  } else {
+    console.log('colors are not the same');
+    nexRow();
+}
+
+// CHECKING EACH ROW FUNCTION
+
+const checkButton = document.getElementById('check');
+checkButton.addEventListener('click', checkButton);
