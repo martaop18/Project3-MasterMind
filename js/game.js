@@ -157,7 +157,8 @@ if (col1ToHex === secretCode[0] && col2ToHex === secretCode[1] && col3ToHex === 
   const winnerMessage = document.getElementById('winnerMessage');
   winnerMessage.style.display = 'block';
   $(winnerMessage).slideDown();
-  console.log('You did it!');
+
+  // console.log('You did it!');
 
   const setColorCode = () => {
     if(arrayColors && arrayColors.length >= 4){

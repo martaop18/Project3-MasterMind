@@ -7,7 +7,7 @@ Este es el tercer proyecto de mi entrenamiento como full stack developer. En est
 ### Proceso:
 El proyecto se encuentra en proceso de elaboración, me he encontrado ante un reto bastante complejo debido a la falta de práctica/experiencia ante el nuevo lenguaje de programción exigido para desarrollo del mismo.
 Para realizar el proyecto estoy utilizando HTML5,CSS3 y javaScript .
-El proyecto cuenta con diferentes vistas desde las cuales se va accediendo a los diferentes tableros. Para esta entega he realizado el nivel prinicpiante, en este tienes 10 oportunidades y el código secreto se  descifrará entre los 4 colores elegidos por el jugador.
+El proyecto cuenta con diferentes vistas desde las cuales se va accediendo a los diferentes tableros. Para esta entega he realizado el nivel prinicpiante, en este nivel el jugador tienes 10 oportunidades y el código secreto se  descifrará entre los 4 colores elegidosa.
 
 
 ### Página Home 
