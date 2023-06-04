@@ -5,7 +5,7 @@ const savePlayer = ()=>{
     let player = document.getElementById('playerName').value;
 
     sessionStorage.setItem('user', player);
-    // window.location.href = "../pages/gameOver.html"
+    window.location.href = "../pages/game.html"
     
 }
 
