@@ -51,6 +51,10 @@ a:link, a:visited, a:active {
     justify-content:center;
   }
 
+  .warning{
+    color: #C38154;
+  }
+
 .byMe{
     text-align: center;
 }

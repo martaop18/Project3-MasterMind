@@ -1,7 +1,7 @@
 // GAME BOARD-GETTING THE ARRAY WITH THE SELECTED COLORS
 
 const arrayColors = JSON.parse(sessionStorage.getItem("arrayColors"));
-console.log('Arraycolors', arrayColors)
+console.log('the selected colors are', arrayColors)
 
 // DEFINING THE SECRET CODE---------------------------------------
 let secretCode = [];
@@ -82,8 +82,8 @@ const nextRow = () => {
     console.log('Sorry, try next time');
     return;
   }
-console.log(currentCol, 'this  is the currect col')
-console.log(currentRow, 'this  is the currect row')
+console.log(currentCol, 'this  is the current col')
+console.log(currentRow, 'this  is the current row')
 currentCol = 1;
 }
 
