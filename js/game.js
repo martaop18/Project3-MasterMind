@@ -175,6 +175,9 @@ if (col4ToHex === secretCode[3]) {
 if (col1ToHex === secretCode[0] && col2ToHex === secretCode[1] && col3ToHex === secretCode[2] && col4ToHex === secretCode[3]) {
   
   const winnerMessage = document.getElementById('winnerMessage');
+  winnerMessage.innerHTML = `
+  <p>🥳 Well done ${player}!You've guessed the code!🎉</p>
+  <p>Wanna try more? Click on &ltmasterGame&gt</p>`
   winnerMessage.style.display = 'block';
   $(winnerMessage).slideDown();
 
