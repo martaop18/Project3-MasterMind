@@ -75,11 +75,19 @@ const saveColor = () => {
 }
 saveColor();
 
-// DEFINING CONSTANT FOR ENDING LAST TURN
+// DEFINING CONSTANT FOR ENDING LAST TURN-----------------------------------------
 const nextRow = () => {
+  let player = sessionStorage.getItem('user');
   currentRow++;
   if (currentRow > 10){
-    console.log('Sorry, try next time');
+    const loserMessage = document.getElementById('loserMessage');
+    loserMessage.innerHTML =`
+    <p>Sorry ${player}!😢. You haven't guessed the code.</p>
+    <p>Wanna try more? Click on &ltmasterGame&gt</p>`;
+    loserMessage.style.display = 'block';
+    $(loserMessage).slideDown();
+
+    // console.log('Sorry, try next time');
     return;
   }
 console.log(currentCol, 'this  is the current col')
@@ -96,7 +104,7 @@ const col3 = document.getElementById(`fila${currentRow}-3`).style.backgroundColo
 const col4 = document.getElementById(`fila${currentRow}-4`).style.backgroundColor;
 
 
-// ADDING FUNCTION TO CHANGE COLOR VALUE FROM RGB TO HEX (COPIED FROM STACK OVERFLOW)
+// ADDING FUNCTION TO CHANGE COLOR VALUE FROM RGB TO HEX----------------------------
 
 function rgbToHex(rgb) {
   const match = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
