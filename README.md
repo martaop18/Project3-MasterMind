@@ -28,7 +28,11 @@ El proyecto cuenta con diferentes vistas desde las cuales se va accediendo a los
 
 
 ### Página tablero de juego-nivel principiante
-![Alt text](img/gameBoard.jpg)
+![Alt text](img/begginerboard.jpg)
+
+### Página tablero con código descubierto
+![Alt text](img/winning%20view.jpg)
+
 
 
 

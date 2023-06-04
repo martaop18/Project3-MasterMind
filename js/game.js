@@ -132,7 +132,7 @@ const dot4 = document.getElementById(`dot${currentRow}-4`);
 
 console.log('this is the secret code ', secretCode);
 
-// COMPARING ADDED COLORS WITH THE SECRET CODE AND CHECKING BLACK AND WHITE CLUES
+// COMPARING ADDED COLORS WITH THE SECRET CODE AND CHECKING RED AND WHITE CLUES
 if (col1ToHex === secretCode[0]) {
   dot1.style.backgroundColor = "red";
 }else{
@@ -161,7 +161,7 @@ if (col1ToHex === secretCode[0] && col2ToHex === secretCode[1] && col3ToHex === 
   winnerMessage.style.display = 'block';
   $(winnerMessage).slideDown();
 
-  // console.log('You did it!');
+  console.log('well done you have guessed the code!');
 
   const setColorCode = () => {
     if(arrayColors && arrayColors.length >= 4){
