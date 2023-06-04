@@ -181,7 +181,7 @@ const checkCombination = () => {
     dot4.style.backgroundColor = "";
   }
 
-  // SETING WINNER CONDITION
+  // SETTING WINNER CONDITION
   if (
     col1ToHex === secretCode[0] &&
     col2ToHex === secretCode[1] &&
@@ -211,7 +211,7 @@ const checkCombination = () => {
     nextRow();
   }
 };
-// CHECKING EACH ROW FUNCTION
+// CHECKING EACH ROW FUNCTION, SETTING CONDITION FOR CONTINUING CLICKING
 const checkButton = document.getElementById("check");
 
 checkButton.addEventListener("click", () => {
