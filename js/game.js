@@ -6,8 +6,11 @@ console.log('Arraycolors', arrayColors)
 // DEFINING THE SECRET CODE---------------------------------------
 let secretCode = [];
 const colorsRandom = () => {
-  if (secretCode.length === 0)
-  secretCode = [...arrayColors].sort(() => Math.random() -0.5)
+  if (secretCode.length === 0) {
+    for(let i=0; i < 4; i++) {
+    const randomColor = arrayColors[Math.floor(Math.random() * arrayColors.length)];
+    secretCode.push(randomColor)}
+  }
   console.log('the secret code is', secretCode);
   return secretCode;
     }
