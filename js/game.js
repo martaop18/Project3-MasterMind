@@ -135,23 +135,32 @@ console.log('this is the secret code ', secretCode);
 // COMPARING ADDED COLORS WITH THE SECRET CODE AND CHECKING RED AND WHITE CLUES
 if (col1ToHex === secretCode[0]) {
   dot1.style.backgroundColor = "red";
-}else{
+}else if (secretCode.includes(col1ToHex)){
   dot1.style.backgroundColor = "white";
+}else{
+  dot1.style.backgroundColor = "";
 }
+
 if (col2ToHex === secretCode[1]) {
   dot2.style.backgroundColor = "red";
-}else{
+}else if (secretCode.includes(col2ToHex)){
   dot2.style.backgroundColor = "white";
+}else{
+  dot2.style.backgroundColor = "";
 }
 if (col3ToHex === secretCode[2]) {
   dot3.style.backgroundColor = "red";
-}else{
+}else if (secretCode.includes(col3ToHex)){
   dot3.style.backgroundColor = "white";
+}else{
+  dot3.style.backgroundColor = "";
 }
 if (col4ToHex === secretCode[3]) {
   dot4.style.backgroundColor = "red";
-}else{
+}else if (secretCode.includes(col4ToHex)){
   dot4.style.backgroundColor = "white";
+}else{
+  dot4.style.backgroundColor = "";
 }
 
 // SETING WINNER CONDITION
